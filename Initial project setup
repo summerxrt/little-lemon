@@ -1,0 +1,24 @@
+[33mcommit d9efcd3dc55192f2bc83fe9f84085e1f36834735[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: summerxrt <sumerx2000@yahoo.com>
+Date:   Sun Oct 20 11:19:39 2024 +0200
+
+    Update .gitignore to include new rules
+
+[33mcommit 7d2f7425323a9c142008aefca1fdb1caf2c59c5d[m
+Merge: 1d25aaf 341e761
+Author: summerxrt <sumerx2000@yahoo.com>
+Date:   Sun Oct 20 11:19:07 2024 +0200
+
+    first commit
+
+[33mcommit 341e7614fc3726e3f723197816e511eea7aba1a7[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: summerxrt <sumerx2000@yahoo.com>
+Date:   Sun Oct 20 11:07:46 2024 +0200
+
+    Initial commit for setting up the project structure
+
+[33mcommit 1d25aaf770e868c73c25e3df81543bcf62ced0b4[m
+Author: RemusT <sumerx2000@yahoo.com>
+Date:   Sun Oct 20 11:04:06 2024 +0200
+
+    Initial commit
