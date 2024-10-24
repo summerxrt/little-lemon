@@ -1,5 +1,5 @@
 /* General Styles */
-* {
+html, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,11 +26,16 @@ body {
   padding: 10px 20px;
 }
 
-.navbar .logo {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
+.navbar .logo img {
+  width: 150px; /* Adjust width to your desired size */
+  height: auto; /* Maintain aspect ratio */
 }
+.logo img {
+  width: 150px; /* Adjust this size as needed */
+  height: auto;
+  display: block; /* Ensure it's displayed properly */
+}
+
 
 .nav-links {
   list-style: none;
@@ -45,6 +50,11 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
 /* Hero Section */
@@ -52,20 +62,26 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 0;
-  background-color: #e4f0f5;
+  padding: 60px 40px; /* Added padding on the left and right */
+  background-color: #495E57;
 }
+
 
 .hero-content h1 {
   font-size: 48px;
-  color: #333;
+  color: #ffffff;
 }
 
 .hero-content p {
   font-size: 20px;
   margin: 10px 0;
+  color: #ffffff;
+
 }
 
+.reserve-btn:hover {
+  background-color: #e6b800;
+}
 .reserve-btn {
   padding: 10px 20px;
   background-color: #ffcc00;
@@ -73,7 +89,10 @@ body {
   cursor: pointer;
   font-size: 18px;
   margin-top: 20px;
+  margin-left: 10px; /* Adds some space from the left */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 .hero-image img {
   width: 400px;
@@ -95,11 +114,40 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  color:#5a5c5b;
+
+}
+
+
+.special {
+  text-align: center;
+
+}
+.highlights {
+  background-color: #eed4bb; /* Add background color */
+  padding: 60px 0; /* Add padding for spacing */
+}
+
+.specials-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 20px; /* Add some padding on the sides if needed */
 }
 
 .special {
   text-align: center;
+  padding: 10px; /* Add padding inside each special */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for a 3D effect */
 }
+
+.special img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px; /* Make the image corners rounded */
+}
+
 
 .special img {
   width: 200px;
@@ -114,12 +162,17 @@ body {
   border: none;
   cursor: pointer;
   font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #e6b800;
 }
 
 /* Testimonials Section */
 .testimonials {
   padding: 60px 0;
-  background-color: #f8f8f8;
+  background-color: #EE9972;
   text-align: center;
 }
 
@@ -138,7 +191,7 @@ body {
 /* About Section */
 .about {
   padding: 60px 0;
-  background-color: #fff;
+  background-color: #ffa600b5;
   text-align: center;
 }
 
@@ -167,8 +220,8 @@ body {
 }
 
 .footer-links li {
-  display: inline;
-  margin: 0 10px;
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .footer-links a {
@@ -178,4 +231,45 @@ body {
 
 .footer-contact p {
   margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  .specials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .special img {
+    width: 100%;
+  }
+
+  .about-images img {
+    width: 100px;
+  }
 }
