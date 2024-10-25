@@ -82,6 +82,7 @@ body {
   margin-top: 20px;
   margin-left: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px; /* Added to make corners round */
 }
 
 .reserve-btn:hover {
@@ -134,6 +135,7 @@ body {
   cursor: pointer;
   font-size: 18px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px; /* Added to make corners round */
 }
 
 .order-btn:hover {
