@@ -26,16 +26,12 @@ body {
   padding: 10px 20px;
 }
 
-.navbar .logo img {
-  width: 150px; /* Adjust width to your desired size */
-  height: auto; /* Maintain aspect ratio */
-}
+.navbar .logo img,
 .logo img {
-  width: 150px; /* Adjust this size as needed */
+  width: 150px;
   height: auto;
-  display: block; /* Ensure it's displayed properly */
+  display: block;
 }
-
 
 .nav-links {
   list-style: none;
@@ -62,10 +58,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 40px; /* Added padding on the left and right */
+  padding: 60px 40px;
   background-color: #495E57;
 }
-
 
 .hero-content h1 {
   font-size: 48px;
@@ -76,12 +71,8 @@ body {
   font-size: 20px;
   margin: 10px 0;
   color: #ffffff;
-
 }
 
-.reserve-btn:hover {
-  background-color: #e6b800;
-}
 .reserve-btn {
   padding: 10px 20px;
   background-color: #ffcc00;
@@ -89,10 +80,13 @@ body {
   cursor: pointer;
   font-size: 18px;
   margin-top: 20px;
-  margin-left: 10px; /* Adds some space from the left */
+  margin-left: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.reserve-btn:hover {
+  background-color: #e6b800;
+}
 
 .hero-image img {
   width: 400px;
@@ -102,7 +96,7 @@ body {
 /* Highlights Section */
 .highlights {
   padding: 60px 0;
-  background-color: #fff;
+  background-color: #eed4bb;
 }
 
 .highlights h2 {
@@ -114,44 +108,21 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-  color:#5a5c5b;
-
-}
-
-
-.special {
-  text-align: center;
-
-}
-.highlights {
-  background-color: #eed4bb; /* Add background color */
-  padding: 60px 0; /* Add padding for spacing */
-}
-
-.specials-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  padding: 0 20px; /* Add some padding on the sides if needed */
+  padding: 0 20px;
+  color: #5a5c5b;
 }
 
 .special {
   text-align: center;
-  padding: 10px; /* Add padding inside each special */
-  border-radius: 8px; /* Add rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for a 3D effect */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .special img {
   width: 200px;
   height: auto;
-  border-radius: 8px; /* Make the image corners rounded */
-}
-
-
-.special img {
-  width: 200px;
-  height: auto;
+  border-radius: 8px;
 }
 
 .order-btn {
