@@ -5,6 +5,7 @@ import Specials from './Specials';
 import Footer from './Footer';
 import Reservation from './Reservation'; // Import the Reservation component
 
+
 const Navbar = () => (
   <nav className="navbar">
     <div className="logo">
@@ -12,14 +13,15 @@ const Navbar = () => (
     </div>
     <ul className="nav-links">
       <li><Link to="/">Home</Link></li>
-      <li><Link to="#about">About</Link></li>
-      <li><Link to="#menu">Menu</Link></li>
+      <li><a href="#about">About</a></li> {/* Changed to anchor link */}
+      <li><a href="#menu">Menu</a></li> {/* Changed to anchor link */}
       <li><Link to="/reservations">Reservations</Link></li>
-      <li><Link to="#order-online">Order Online</Link></li>
-      <li><Link to="#login">Login</Link></li>
+      <li><a href="#order-online">Order Online</a></li> {/* Changed to anchor link */}
+      <li><a href="#login">Login</a></li> {/* Changed to anchor link */}
     </ul>
   </nav>
 );
+
 
 const HeroSection = () => (
   <section className="hero">
