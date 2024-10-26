@@ -63,14 +63,46 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 48px;
-  color: #ffffff;
+  font-size: 45px;
+  color: #e0d400;
 }
 
 .hero-content p {
-  font-size: 20px;
+  font-size: 15px;
   margin: 10px 0;
   color: #ffffff;
+}
+
+/* Reservation Form Section */
+.reservation {
+  padding: 40px 20px;
+  background-color: #EED4BB;
+  text-align: center;
+}
+
+.reservation h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.reservation-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.reservation-form label {
+  grid-column: span 1;
+  text-align: left;
+  color: #333;
+}
+
+.reservation-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .reserve-btn {
