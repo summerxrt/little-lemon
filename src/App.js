@@ -4,11 +4,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Specials from './Specials';
 import Footer from './Footer';
 import Reservation from './Reservation'; // Import the Reservation component
-import { createRoot } from 'react-dom/client';
-
-const root = createRoot(document.getElementById('root'));
-root.render(<App />);
-
 
 const Navbar = () => (
   <nav className="navbar">
@@ -17,11 +12,11 @@ const Navbar = () => (
     </div>
     <ul className="nav-links">
       <li><Link to="/">Home</Link></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#menu">Menu</a></li>
+      <li><Link to="#about">About</Link></li>
+      <li><Link to="#menu">Menu</Link></li>
       <li><Link to="/reservations">Reservations</Link></li>
-      <li><a href="#order-online">Order Online</a></li>
-      <li><a href="#login">Login</a></li>
+      <li><Link to="#order-online">Order Online</Link></li>
+      <li><Link to="#login">Login</Link></li>
     </ul>
   </nav>
 );
@@ -31,8 +26,7 @@ const HeroSection = () => (
     <div className="hero-content">
       <h1>Little Lemon</h1>
       <p>Chicago</p>
-      <p>
-      Little Lemon Chicago is a cozy and vibrant Mediterranean-inspired restaurant located in the heart of Chicago. Known for its fresh, flavorful dishes and warm ambiance, it’s a popular spot for both locals and visitors looking for healthy, delicious dining options. Whether you're enjoying a meal with family or celebrating a special occasion, Little Lemon offers a welcoming atmosphere that makes every visit memorable.</p>
+      <p>Little Lemon Chicago is a cozy and vibrant Mediterranean-inspired restaurant located in the heart of Chicago. Known for its fresh, flavorful dishes and warm ambiance, it’s a popular spot for both locals and visitors looking for healthy, delicious dining options. Whether you're enjoying a meal with family or celebrating a special occasion, Little Lemon offers a welcoming atmosphere that makes every visit memorable.</p>
       <Link to="/reservations" className="reserve-btn">Reserve a Table</Link>
     </div>
     <div className="hero-image">
@@ -58,7 +52,7 @@ const Testimonials = () => (
 );
 
 const AboutSection = () => (
-  <section className="about">
+  <section id="about" className="about">
     <h2>About Little Lemon</h2>
     <p>Adrian and Mario started Little Lemon to bring the flavors of the Mediterranean to Chicago.</p>
     <div className="about-images">

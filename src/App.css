@@ -264,6 +264,36 @@ body {
   .hero-image img {
     width: 100%;
   }
+  @media (max-width: 768px) {
+    .specials-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    .special-item {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .specials {
+    padding: 40px;
+    background-color: #eed4bb;
+    text-align: center;
+  }
+  
+  .specials-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .special-item {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
 
   .specials-container {
     flex-direction: column;
@@ -277,4 +307,33 @@ body {
   .about-images img {
     width: 100px;
   }
+}
+.call-to-action {
+  text-align: center;
+  padding: 50px;
+  background-color: #495e57;
+  color: #fff;
+}
+
+.call-to-action h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.call-to-action p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.call-to-action button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ffcc00;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.call-to-action button:hover {
+  background-color: #e6b800;
 }
